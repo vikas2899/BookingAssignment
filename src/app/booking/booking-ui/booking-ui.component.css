@@ -1,0 +1,52 @@
+.bookingUI-boxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5px;
+}
+
+.bookingUI-box {
+    width: calc(100% / 8);
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booked {
+    background-color: green;
+    color: white;
+    font-weight: 600;
+}
+
+.bookingUI-labels {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.bookingUI-box-booked {
+    width:100px;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+.bookingUI-box-available {
+    width: 100px;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}

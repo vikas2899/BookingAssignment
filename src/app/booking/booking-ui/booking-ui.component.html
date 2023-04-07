@@ -1,0 +1,21 @@
+<div class="bookingUI-boxContainer">
+  <div
+    *ngFor="let box of numofBoxesBasedonSeats(noOfSeats); let index = index"
+    class="bookingUI-box"
+    [ngClass]="{ booked: isSeatIsBooked(index) }"
+  >
+    {{ index + 1 }}
+  </div>
+</div>
+<div class="bookingUI-labels">
+  <div>
+    <label>Seats Booked</label>
+    <div class="bookingUI-box-booked">{{ getSeatsBookedCount() }}</div>
+  </div>
+  <div>
+    <label>Seats Available</label>
+    <div class="bookingUI-box-available">
+      {{ getTotalSeatsCount() - getSeatsBookedCount() }}
+    </div>
+  </div>
+</div>
